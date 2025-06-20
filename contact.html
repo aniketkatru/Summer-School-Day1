@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Form</h1>
+    <nav>
+      <a href="portfolio.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="tel" name="phone" pattern="[0-9]{10}" required><br><br>
+
+      <label>Message:</label><br>
+      <textarea name="message" required></textarea><br><br>
+
+      <label>Preferred Contact Method:</label><br>
+      <input type="checkbox" name="contact_method" value="email"> Email
+      <input type="checkbox" name="contact_method" value="phone"> Phone
+      <input type="checkbox" name="contact_method" value="text"> Text<br><br>
+
+      <label>Inquiry Type:</label><br>
+      <input type="radio" name="inquiry" value="general" required> General
+      <input type="radio" name="inquiry" value="business"> Business
+      <input type="radio" name="inquiry" value="support"> Support<br><br>
+
+      <!-- Enhancement Challenge -->
+      <label>How did you hear about me?</label><br>
+      <select name="referral" required>
+        <option value="">--Select--</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label>Preferred Meeting Date:</label><br>
+      <input type="date" name="meeting_date" required><br><br>
+
+      <label>Interest Level (1 to 10):</label><br>
+      <input type="range" min="1" max="10" name="interest"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>Thanks for reaching out!</p>
+  </footer>
+
+</body>
+</html>
